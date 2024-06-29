@@ -1,3 +1,5 @@
+#include "usb_receiver.h"
+
 #define SHIFT_DATA 2
 #define SHIFT_CLK 3
 #define SHIFT_LATCH 4
