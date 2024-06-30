@@ -14,7 +14,7 @@ The following applies to PDIP package.
 | [AT28C64](/doc/AT28C64.pdf) | 28        | 8192 |
 | [AT28C256](/doc/AT28C256.pdf) | 28        | 32768 |
 
-Pin ID is the reference in the EEPROM datasheet.
+EEPROM pin label is the reference in the datasheet.
 
 There are two Shift Registers (74HC595), SR1 and SR2.
 
