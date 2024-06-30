@@ -4,7 +4,7 @@
 
 Use two sockets: a 24-pin socket for the AT28C16, and a 28-pin socket for the AT28C64 and AT28C256.
 
-*Note 1:* On the AT28C64, pin 1 is an output and should not be loaded. On the AT28C256, pin 1 is an input. We can use the same socket for both chip types. Use a diode to get around this to avoid a dead short.
+**Note 1:** On the AT28C64, pin 1 is an output and should not be loaded. On the AT28C256, pin 1 is an input. We can use the same socket for both chip types. Use a diode to get around this to avoid a dead short.
  
 The following applies to PDIP package.
 
