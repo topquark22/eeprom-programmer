@@ -20,7 +20,7 @@ There are two Shift Registers (74HC595), SR1 and SR2.
 
 D# are Arduino pins.
 
-| EEPROM pin ID | function | AT28C16 pin | AT28C64 pin | AT28C256 pin | wire to |
+| EEPROM pin | function | AT28C16 pin | AT28C64 pin | AT28C256 pin | wire to |
 |--------|-------------|---------|--------------|--------------|---------------|
 | A0     | address bus | 8 | 10 | 10 | SR1 15 | 
 | A1   | address bus | 7 | 9 | 9 | SR1 1 | 
