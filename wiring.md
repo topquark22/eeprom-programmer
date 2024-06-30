@@ -18,7 +18,7 @@ Pin ID is the reference in the EEPROM datasheet.
 
 There are two Shift Registers (74HC595), SR1 and SR2.
 
-D# are Arduino pins.
+Dn are Arduino pins.
 
 | EEPROM pin | function | AT28C16 pin | AT28C64 pin | AT28C256 pin | wire to |
 |--------|-------------|---------|--------------|--------------|---------------|
