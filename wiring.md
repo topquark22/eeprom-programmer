@@ -14,7 +14,7 @@ There are two Shift Registers (74HC595), SR1 and SR2.
 
 D# are Arduino pins.
 
-| EEPROM pin ID | function    | AT28C16 pin | AT28C64 pin | AT28C256 pin | wire to |
+| EEPROM pin ID | function | AT28C16 pin | AT28C64 pin | AT28C256 pin | wire to |
 |--------|-------------|---------|--------------|--------------|---------------|
 | A0     | address bus | 8 | 10 | 10 | SR1 15 | 
 | A1   | address bus | 7 | 9 | 9 | SR1 1 | 
@@ -30,7 +30,7 @@ D# are Arduino pins.
 | A11   | address bus | - | 23 | 23 | SR2 3 |
 | A12   | address bus | - | 2 | 2 | SR2 4 |
 | A13 | address bus | - | - | 26 | SR2 5 |
-| A14 | address bus | - | - | 1 | SR2 6 |
+| A14 | address bus | - | - | 1 (note 1) | SR2 6 |
 | CEN | chip enable | 18 | 20 | 20 | GND | 
 | OEN | output enable | 20 | 22 | 22 | SR2 7|
 | WEN | write enable | 21 | 27 | 27| D13 |
@@ -44,3 +44,5 @@ D# are Arduino pins.
 | I/O7 | data bus | 17 | 19 | 19 | D12 | 
 | GND | power | 12 | 14 | 14 | GND | 
 | Vcc | power | 24 | 28 | 28 |  +5V | 
+
+Note 1: On the AT28C64, pin 1 is an output and should not be connected. On the AT28C256, pin 1 is an input. Implement some logic to get around this if using the same socket for both.
