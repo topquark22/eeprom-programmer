@@ -31,9 +31,9 @@ D# are Arduino pins.
 | A12   | address bus | - | 2 | 2 | SR2 4 |
 | A13 | address bus | - | - | 26 | SR2 5 |
 | A14 | address bus | - | - | 1 | SR2 6 (note 1) |
-| CEN | chip enable | 18 | 20 | 20 | GND | 
-| OEN | output enable | 20 | 22 | 22 | SR2 7|
-| WEN | write enable | 21 | 27 | 27| D13 |
+| CE_ | chip enable | 18 | 20 | 20 | GND | 
+| OE_ | output enable | 20 | 22 | 22 | SR2 7|
+| WE_ | write enable | 21 | 27 | 27| D13 |
 | I/O0 | data bus | 9 | 11 | 11 | D5 | 
 | I/O1 | data bus | 10 | 12 | 12 | D6 | 
 | I/O2 | data bus | 11 | 13 | 13 | D7 | 
