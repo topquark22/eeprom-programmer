@@ -45,4 +45,4 @@ D# are Arduino pins.
 | GND | power | 12 | 14 | 14 | GND | 
 | Vcc | power | 24 | 28 | 28 |  +5V | 
 
-Note 1: On the AT28C64, pin 1 is an output and should not be connected. On the AT28C256, pin 1 is an input. Implement some logic to get around this if using the same socket for both chip types.
+Note 1: On the AT28C64, pin 1 is an output and should not be connected. On the AT28C256, pin 1 is an input. Use a diode to get around this if using the same socket for both chip types.
