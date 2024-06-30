@@ -4,8 +4,8 @@
 
 Use two sockets: a 24-pin socket for the AT28C16, and a 28-pin socket for the AT28C64 and AT28C256.
 
-**Note 1:** On the AT28C64, pin 1 is an unused output and should not be loaded. On the AT28C256, pin 1 is an input. We can use the same socket for both chip types. Use a diode to get around this to avoid a dead short.
- 
+ We can use the same socket for both the AT28C64 and AT28C256. The wiring differences are minor (see **Note 1** below.)
+
 The following applies to PDIP package.
 
 | EEPROM part | pin count | capacity (octets) |
@@ -36,7 +36,7 @@ D# are Arduino pins.
 | A11   | address bus | - | 23 | 23 | SR2 3 |
 | A12   | address bus | - | 2 | 2 | SR2 4 |
 | A13 | address bus | - | - | 26 | SR2 5 |
-| A14 | address bus | - | - | 1 | SR2 6 (**Note 1** above) |
+| A14 | address bus | - | - | 1 | SR2 6 (**Note 1**) |
 | CE_ | chip enable | 18 | 20 | 20 | GND | 
 | OE_ | output enable | 20 | 22 | 22 | SR2 7|
 | WE_ | write enable | 21 | 27 | 27| D13 |
@@ -50,3 +50,6 @@ D# are Arduino pins.
 | I/O7 | data bus | 17 | 19 | 19 | D12 | 
 | GND | power | 12 | 14 | 14 | GND | 
 | Vcc | power | 24 | 28 | 28 |  +5V | 
+
+**Note 1:** On the AT28C64, pin 1 is an unused output and should not be loaded. On the AT28C256, pin 1 is an input. Use a diode to get around this to avoid a dead short.
+ 
