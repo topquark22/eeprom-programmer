@@ -8,11 +8,11 @@ Use two sockets: a 24-pin socket for programming the AT28C16, and a 28-pin socke
 
 The following applies to PDIP package.
 
-| EEPROM part | pin count | capacity (octets) |
-|-------------|-----------|----------|
-| [AT28C16](/doc/AT28C16.pdf) | 24        | 2048 |
-| [AT28C64](/doc/AT28C64.pdf) | 28        | 8192 |
-| [AT28C256](/doc/AT28C256.pdf) | 28        | 32768 |
+| EEPROM part | pin count | address bus line count | storage capacity (octets) |
+|-------------|-----------|-------------------|-------------------|
+| [AT28C16](/doc/AT28C16.pdf) | 24       | 11 | 2048 |
+| [AT28C64](/doc/AT28C64.pdf) | 28      | 13  | 8192 |
+| [AT28C256](/doc/AT28C256.pdf) | 28    | 15  | 32768 |
 
 EEPROM pin label is the reference in the datasheet.
 
