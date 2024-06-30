@@ -4,6 +4,8 @@
 
 Use two sockets: a 24-pin socket for programming the AT28C16, and a 28-pin socket for the AT28C64 and AT28C256.
 
+Only program one EEPROM at a time.
+
  We can use the same socket for both the AT28C64 and AT28C256. The wiring differences are minor (see **Note 1** below.)
 
 The following applies to PDIP package.
