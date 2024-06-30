@@ -20,7 +20,7 @@ EEPROM pin label is the reference in the datasheet.
 
 There are two Shift Registers (74HC595), SR1 and SR2. (In the schematic they are called U2 and U3)
 
-Dn are Arduino pins.
+D*n* are Arduino pins.
 
 | EEPROM pin label | function | AT28C16 pin | AT28C64 pin | AT28C256 pin | wire to |
 |--------|-------------|---------|--------------|--------------|---------------|
