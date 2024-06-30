@@ -2,11 +2,11 @@
 
 The following applies to PDIP package.
 
-| EEPROM part | pin count |
-|-------------|-----------|
-| AT28C16     | 24        |
-| AT28C32     | 28        |
-| AT28C256    | 28        |
+| EEPROM part | pin count | capacity (octets) |
+|-------------|-----------|----------|
+| AT28C16     | 24        | 2048 |
+| AT28C64     | 28        | 8192 |
+| AT28C256    | 28        | 32768 |
 
 Pin ID is the reference in the EEPROM datasheet.
 
