@@ -53,5 +53,5 @@ D*n* are Arduino pins.
 | GND | power | 12 | 14 | 14 | GND | 
 | Vcc | power | 24 | 28 | 28 |  +5V | 
 
-**Note 1:** Our design shares a 28-pin socket for an AT28C64 or an AT28C256 being programmed. On the AT28C64, pin 1 is an unused output. On the AT28C256, pin 1 is an input. In this situation, we need to prevent the possibility of a dead short when using the AT28C64. The solution: Connect a small-signal diode from SR2 pin 6 to the socket pin 1. Connect a 4.3K pull-down resistor from pin 1 to ground to ensure sufficient current of 1mA flows through the diode in order to propagate the voltage to the high-impedance logic input to the 28C256.
+**Note 1:** Our design shares a 28-pin socket for an AT28C64 or an AT28C256 to be programmed. On the AT28C64, pin 1 is an unused output. On the AT28C256, pin 1 is an input. In this situation, we need to prevent the possibility of a dead short when using the AT28C64. The solution: Connect a small-signal diode from SR2 pin 6 to the socket pin 1. Connect a 4.3K pull-down resistor from pin 1 to ground to ensure sufficient current of 1mA flows through the diode in order to propagate the voltage to the high-impedance logic input to the 28C256.
  
