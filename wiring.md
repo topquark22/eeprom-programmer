@@ -41,3 +41,5 @@ D# are Arduino pins.
 | I/O7 | data bus | 17 | | | D12 | 
 | GND | power | 12 | | | GND | 
 | Vcc | power | 24 | | |  +5V | 
+
+<span style="text-decoration: overline;">test<span>
