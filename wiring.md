@@ -18,7 +18,7 @@ D# are Arduino pins.
 |--------|-------------|---------|--------------|--------------|---------------|
 | A0     | address bus | 8 | | | SR1 15 | 
 | A1   | address bus | 7 | | | SR1 1 | 
-| A2   | address bus | 6 | | SR1 2 | 
+| A2   | address bus | 6 | | | SR1 2 | 
 | A3    | address bus | 5 | | | SR1 3 | 
 | A4   | address bus | 4 | | | SR1 4 | 
 | A5    | address bus | 3 | | | SR1 5 | 
