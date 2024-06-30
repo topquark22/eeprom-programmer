@@ -1,5 +1,7 @@
 # Wiring reference
 
+Copyright 2024, Geoffrey Trueman Falk (under MIT license)
+
 ## EEPROM connection
 
 Use two sockets: a 24-pin socket for programming the AT28C16, and a 28-pin socket for the AT28C64 and AT28C256.
