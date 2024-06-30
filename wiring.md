@@ -51,5 +51,5 @@ D# are Arduino pins.
 | GND | power | 12 | 14 | 14 | GND | 
 | Vcc | power | 24 | 28 | 28 |  +5V | 
 
-**Note 1:** On the AT28C64, pin 1 is an unused output and should not be loaded. On the AT28C256, pin 1 is an input. Use a diode to get around this to avoid a dead short.
+**Note 1:** On the AT28C64, pin 1 is an unused output and should not be loaded. On the AT28C256, pin 1 is an input. In this situation, we need to prevent the possibility of a dead short when using the AT28C64. Connect a diode from SR2 pin 6 to the socket pin 1. Connect a 4.3K resistor from pin 1 to ground to ensure sufficient current of 1mA flows through the diode in order to propagate the cathode voltage to the logic input on EEPROM pin 1.
  
