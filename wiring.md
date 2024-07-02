@@ -55,5 +55,5 @@ D*n* are Arduino pins.
 | GND | power | 12 | 14 | 14 | GND | 
 | Vcc | power | 24 | 28 | 28 |  +5V | 
 
-**Note 1:** Our design shares a 28-pin socket for an AT28C64 or an AT28C256 to be programmed. On the AT28C64, pin 1 is an open-drain output (READY/BUSY_) that we do not use. On the AT28C256, pin 1 is an input (A14). In this situation, we need to prevent the possibility of a dead short when using the AT28C64. Although SR2 6 is normally low in its address range, it is prudent to place a 7.4K current-limiting resistor between SR2 pin 6 and the socket pin 1.
+**Note 1:** Our design shares a 28-pin socket for an AT28C64 or an AT28C256 to be programmed. On the AT28C64, pin 1 is an open-drain output (READY/BUSY_) that we do not use. On the AT28C256, pin 1 is an input (A14). In this situation, we need to prevent the possibility of a dead short when using the AT28C64. Although SR2 6 is normally low in its address range, it is prudent to place a 4.7K current-limiting resistor between SR2 pin 6 and the socket pin 1.
  
