@@ -10,7 +10,7 @@ Only program one EEPROM at a time.
 
  We can use the same socket for both the AT28C64 and AT28C256. The wiring differences are minor (see **Note 1** below.)
 
-The following applies to PDIP package.
+The following applies to PDIP package. All have the same width of 600 mils (6 * 2.54 mm).
 
 | EEPROM part | pin count | address bus line count | storage capacity (octets) |
 |-------------|-----------|-------------------|-------------------|
