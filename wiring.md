@@ -39,7 +39,7 @@ D*n* are Arduino pins.
 | A10   | address bus | 19 | 21 | 21 | SR2 2 | 
 | A11   | address bus | - | 23 | 23 | SR2 3 |
 | A12   | address bus | - | 2 | 2 | SR2 4 |
-| A13 | address bus | - | - | 26 | SR2 5 |
+| A13 | address bus | - | NC (**Note 2**) | 26 | SR2 5 |
 | A14 | address bus | - | - | 1 | SR2 6 (**Note 1**) |
 | CE_ | chip enable | 18 | 20 | 20 | GND | 
 | OE_ | output enable | 20 | 22 | 22 | SR2 7|
@@ -56,4 +56,4 @@ D*n* are Arduino pins.
 | Vcc | power | 24 | 28 | 28 |  +5V | 
 
 **Note 1:** Our design shares a 28-pin socket for an AT28C64 or an AT28C256 to be programmed. On the AT28C64, pin 1 is an open-drain output (READY/BUSY_) that we do not use. On the AT28C256, pin 1 is an input (A14). In this situation, we need to prevent the possibility of a dead short when using the AT28C64. Although SR2 6 is normally low in its address range, it is prudent to place a 4.7K current-limiting resistor between SR2 pin 6 and the socket pin 1.
- 
+**Note 2:** Pin 26 of the shared socket is internally non-connected on the AT28C64. We connect it anyways, although it is recommended to leave it unconnected. 
