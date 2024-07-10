@@ -44,14 +44,14 @@ D*n* are Arduino pins.
 | CE_ | chip enable | 18 | 20 | 20 | GND | 26U,9U| GND | k | 
 | OE_ | output enable | 20 | 22 | 22 | SR2 7 | 28U | 11U |  r |
 | WE_ | write enable | 21 | 27 | 27| D13 | 29U | 16U | w |
-| I/O0 | data bus | 9 | 11 | 11 | D5 | 
-| I/O1 | data bus | 10 | 12 | 12 | D6 | 
-| I/O2 | data bus | 11 | 13 | 13 | D7 | 
-| I/O3 | data bus | 13 | 15 | 15 | D8 | 
-| I/O4 | data bus | 14 | 16 | 16 | D9 | 
-| I/O5 | data bus | 15 | 17 | 17 | D10 | 
-| I/O6 | data bus | 16 | 18 | 18 | D11 | 
-| I/O7 | data bus | 17 | 19 | 19 | D12 | 
+| I/O0 | data bus | 9 | 11 | 11 | D5 | 24L | 7L | g |
+| I/O1 | data bus | 10 | 12 | 12 | D6 | 23L | 6L | g |
+| I/O2 | data bus | 11 | 13 | 13 | D7 | 22L | 5L | g |
+| I/O3 | data bus | 13 | 15 | 15 | D8 | 21U | 4U | g |
+| I/O4 | data bus | 14 | 16 | 16 | D9 | 22U | 5U | g |
+| I/O5 | data bus | 15 | 17 | 17 | D10 | 23U | 6U | g |
+| I/O6 | data bus | 16 | 18 | 18 | D11 | 24U | 7U | g   
+| I/O7 | data bus | 17 | 19 | 19 | D12 | 25U | 8U | g |
 | GND | power | 12 | 14 | 14 | GND | 21L,4L | GND | k |
 | Vcc | power | 24 | 28 | 28 |  +5V | 32U,17U | +5V | r |
 
