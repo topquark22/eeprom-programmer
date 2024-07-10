@@ -24,14 +24,14 @@ There are two Shift Registers (74HC595), SR1 and SR2. (In the schematic they are
 
 D*n* are Arduino pins.
 
-| EEPROM pin label | function | AT28C16 pin | AT28C64 pin | AT28C256 pin | wire to | PCB from | PCB to | length, colour |
-|--------|-------------|---------|--------------|--------------|---------------|-|-|-|
-| A0     | address bus | 8 | 10 | 10 | SR1 15 | 25L | 8L | 17y |
-| A1   | address bus | 7 | 9 | 9 | SR1 1 |  26L | 9L | 17y |
-| A2   | address bus | 6 | 8 | 8 | SR1 2 | 27L | 10L | 17y |
-| A3    | address bus | 5 | 7 | 7| SR1 3 | 28L | 11L | 17y |
-| A4   | address bus | 4 | 6 | 6 | SR1 4 | 29L | 12L | 17y |
-| A5    | address bus | 3 | 5 | 5 | SR1 5 | 30L or 45L  | 13L | 17y |
+| EEPROM pin label | function | AT28C16 pin | AT28C64 pin | AT28C256 pin | wire to | PCB from | PCB to | length, colour | done |
+|--------|-------------|---------|--------------|--------------|---------------|-|-|-|-|
+| A0     | address bus | 8 | 10 | 10 | SR1 15 | 25L or 50L  | 8L | 17y | x |
+| A1   | address bus | 7 | 9 | 9 | SR1 1 |  26L | 9L  | 17y | x |
+| A2   | address bus | 6 | 8 | 8 | SR1 2 | 27L | 10L | 17y | x |
+| A3    | address bus | 5 | 7 | 7| SR1 3 | 28L | 11L | 17y | x |
+| A4   | address bus | 4 | 6 | 6 | SR1 4 | 29L | 12L | 17y | x |
+| A5    | address bus | 3 | 5 | 5 | SR1 5 | 30L or 45L  | 13L | 17y or 28y | x |
 | A6    | address bus | 2 | 4 | 4 | SR1 6 | 31L | 14L | 17y |
 | A7    | address bus | 1 | 3 | 3 | SR1 7 | 32L | 15L | 17y |
 | A8    | address bus | 23 | 25 | 25 | SR2 15 | 31U | 14U | 17y |
