@@ -42,8 +42,8 @@ D*n* are Arduino pins.
 | A13 | address bus | - | NC (**Note 2**) | 26 | SR2 5 | 37L | 15U | y |
 | A14 | address bus | - | - | 1 | SR2 6 (**Note 1**) |  36L | 18L | y |
 | CE_ | chip enable | 18 | 20 | 20 | GND | | | k | 
-| OE_ | output enable | 20 | 22 | 22 | SR2 7 | r |
-| WE_ | write enable | 21 | 27 | 27| D13 | w |
+| OE_ | output enable | 20 | 22 | 22 | SR2 7 | 28U | 11U |  r |
+| WE_ | write enable | 21 | 27 | 27| D13 | 29U | 16U |w |
 | I/O0 | data bus | 9 | 11 | 11 | D5 | 
 | I/O1 | data bus | 10 | 12 | 12 | D6 | 
 | I/O2 | data bus | 11 | 13 | 13 | D7 | 
