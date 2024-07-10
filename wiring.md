@@ -24,34 +24,34 @@ There are two Shift Registers (74HC595), SR1 and SR2. (In the schematic they are
 
 D*n* are Arduino pins.
 
-| EEPROM pin label | function | AT28C16 pin | AT28C64 pin | AT28C256 pin | wire to | PCB from | PCB to | colour |
+| EEPROM pin label | function | AT28C16 pin | AT28C64 pin | AT28C256 pin | wire to | PCB from | PCB to | length, colour |
 |--------|-------------|---------|--------------|--------------|---------------|-|-|-|
-| A0     | address bus | 8 | 10 | 10 | SR1 15 | 25L | 8L | y |
-| A1   | address bus | 7 | 9 | 9 | SR1 1 |  26L | 9L | y |
-| A2   | address bus | 6 | 8 | 8 | SR1 2 | 27L | 10L | y |
-| A3    | address bus | 5 | 7 | 7| SR1 3 | 28L | 11L | y |
-| A4   | address bus | 4 | 6 | 6 | SR1 4 | 29L | 12L | y |
-| A5    | address bus | 3 | 5 | 5 | SR1 5 | 30L | 13L | y |
-| A6    | address bus | 2 | 4 | 4 | SR1 6 | 31L | 14L | y |
-| A7    | address bus | 1 | 3 | 3 | SR1 7 | 32L | 15L | y |
-| A8    | address bus | 23 | 25 | 25 | SR2 15 | 31U | 14U | y |
-| A9    | address bus | 22 | 24 | 24 | SR2 1 | 30U | 13U | y |
-| A10   | address bus | 19 | 21 | 21 | SR2 2 | 27U | 10U | y |
+| A0     | address bus | 8 | 10 | 10 | SR1 15 | 25L | 8L | 17y |
+| A1   | address bus | 7 | 9 | 9 | SR1 1 |  26L | 9L | 17y |
+| A2   | address bus | 6 | 8 | 8 | SR1 2 | 27L | 10L | 17y |
+| A3    | address bus | 5 | 7 | 7| SR1 3 | 28L | 11L | 17y |
+| A4   | address bus | 4 | 6 | 6 | SR1 4 | 29L | 12L | 17y |
+| A5    | address bus | 3 | 5 | 5 | SR1 5 | 30L | 13L | 17y |
+| A6    | address bus | 2 | 4 | 4 | SR1 6 | 31L | 14L | 17y |
+| A7    | address bus | 1 | 3 | 3 | SR1 7 | 32L | 15L | 17y |
+| A8    | address bus | 23 | 25 | 25 | SR2 15 | 31U | 14U | 17y |
+| A9    | address bus | 22 | 24 | 24 | SR2 1 | 30U | 13U | 17y |
+| A10   | address bus | 19 | 21 | 21 | SR2 2 | 27U | 10U |17y |
 | A11   | address bus | - | 23 | 23 | SR2 3 | 39L | 12U | y |
-| A12   | address bus | - | 2 | 2 | SR2 4 | 38L | 16L | y |
+| A12   | address bus | - | 2 | 2 | SR2 4 | 38L | 16L | 22y |
 | A13 | address bus | - | NC (**Note 2**) | 26 | SR2 5 | 37L | 15U | y |
-| A14 | address bus | - | - | 1 | SR2 6 (**Note 1**) |  36L | 18L | y |
+| A14 | address bus | - | - | 1 | SR2 6 (**Note 1**) |  36L | 18L | 18y |
 | CE_ | chip enable | 18 | 20 | 20 | GND | 26U,9U| GND | k | 
 | OE_ | output enable | 20 | 22 | 22 | SR2 7 | 28U | 11U |  r |
 | WE_ | write enable | 21 | 27 | 27| D13 | 29U | 16U | w |
-| I/O0 | data bus | 9 | 11 | 11 | D5 | 24L | 7L | g |
-| I/O1 | data bus | 10 | 12 | 12 | D6 | 23L | 6L | g |
-| I/O2 | data bus | 11 | 13 | 13 | D7 | 22L | 5L | g |
-| I/O3 | data bus | 13 | 15 | 15 | D8 | 21U | 4U | g |
-| I/O4 | data bus | 14 | 16 | 16 | D9 | 22U | 5U | g |
-| I/O5 | data bus | 15 | 17 | 17 | D10 | 23U | 6U | g |
-| I/O6 | data bus | 16 | 18 | 18 | D11 | 24U | 7U | g   
-| I/O7 | data bus | 17 | 19 | 19 | D12 | 25U | 8U | g |
+| I/O0 | data bus | 9 | 11 | 11 | D5 | 24L | 7L | 17g |
+| I/O1 | data bus | 10 | 12 | 12 | D6 | 23L | 6L | 17g |
+| I/O2 | data bus | 11 | 13 | 13 | D7 | 22L | 5L | 17g |
+| I/O3 | data bus | 13 | 15 | 15 | D8 | 21U | 4U | 17g |
+| I/O4 | data bus | 14 | 16 | 16 | D9 | 22U | 5U | 17g |
+| I/O5 | data bus | 15 | 17 | 17 | D10 | 23U | 6U  |17g |
+| I/O6 | data bus | 16 | 18 | 18 | D11 | 24U | 7U | 17g |
+| I/O7 | data bus | 17 | 19 | 19 | D12 | 25U | 8U | 17g |
 | GND | power | 12 | 14 | 14 | GND | 21L,4L | GND | k |
 | Vcc | power | 24 | 28 | 28 |  +5V | 32U,17U | +5V | r |
 
