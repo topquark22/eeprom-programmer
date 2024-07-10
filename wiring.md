@@ -27,7 +27,7 @@ D*n* are Arduino pins.
 | EEPROM pin label | function | AT28C16 pin | AT28C64 pin | AT28C256 pin | wire to | PCB from | PCB to |
 |--------|-------------|---------|--------------|--------------|---------------|-|-|
 | A0     | address bus | 8 | 10 | 10 | SR1 15 | 25L | 8L |
-| A1   | address bus | 7 | 9 | 9 | SR1 1 |  | 9L | 26L | 9L |
+| A1   | address bus | 7 | 9 | 9 | SR1 1 | 9L | 26L | 9L |
 | A2   | address bus | 6 | 8 | 8 | SR1 2 | 26L | 10L | 
 | A3    | address bus | 5 | 7 | 7| SR1 3 | 27L | 11L | 
 | A4   | address bus | 4 | 6 | 6 | SR1 4 | 28L | 12L |
