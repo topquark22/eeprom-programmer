@@ -24,26 +24,26 @@ There are two Shift Registers (74HC595), SR1 and SR2. (In the schematic they are
 
 D*n* are Arduino pins.
 
-| EEPROM pin label | function | AT28C16 pin | AT28C64 pin | AT28C256 pin | wire to | PCB from | PCB to |
-|--------|-------------|---------|--------------|--------------|---------------|-|-|
-| A0     | address bus | 8 | 10 | 10 | SR1 15 | 25L | 8L |
-| A1   | address bus | 7 | 9 | 9 | SR1 1 |  26L | 9L |
-| A2   | address bus | 6 | 8 | 8 | SR1 2 | 27L | 10L | 
-| A3    | address bus | 5 | 7 | 7| SR1 3 | 28L | 11L | 
-| A4   | address bus | 4 | 6 | 6 | SR1 4 | 29L | 12L |
-| A5    | address bus | 3 | 5 | 5 | SR1 5 | 30L | 13L |
-| A6    | address bus | 2 | 4 | 4 | SR1 6 | 31L | 14L |
-| A7    | address bus | 1 | 3 | 3 | SR1 7 | 32L | 15L |
-| A8    | address bus | 23 | 25 | 25 | SR2 15 | 31U | 14U |
-| A9    | address bus | 22 | 24 | 24 | SR2 1 | 30U | 13U |
-| A10   | address bus | 19 | 21 | 21 | SR2 2 | 27U | 10U |
-| A11   | address bus | - | 23 | 23 | SR2 3 | 39L | 12U |
-| A12   | address bus | - | 2 | 2 | SR2 4 | 38L | 16L |
-| A13 | address bus | - | NC (**Note 2**) | 26 | SR2 5 | 37L | 15U |
-| A14 | address bus | - | - | 1 | SR2 6 (**Note 1**) |  36L | 18L |
-| CE_ | chip enable | 18 | 20 | 20 | GND | | |
-| OE_ | output enable | 20 | 22 | 22 | SR2 7 |
-| WE_ | write enable | 21 | 27 | 27| D13 |
+| EEPROM pin label | function | AT28C16 pin | AT28C64 pin | AT28C256 pin | wire to | PCB from | PCB to | colour |
+|--------|-------------|---------|--------------|--------------|---------------|-|-|-|
+| A0     | address bus | 8 | 10 | 10 | SR1 15 | 25L | 8L | y |
+| A1   | address bus | 7 | 9 | 9 | SR1 1 |  26L | 9L | y |
+| A2   | address bus | 6 | 8 | 8 | SR1 2 | 27L | 10L | y |
+| A3    | address bus | 5 | 7 | 7| SR1 3 | 28L | 11L | y |
+| A4   | address bus | 4 | 6 | 6 | SR1 4 | 29L | 12L | y |
+| A5    | address bus | 3 | 5 | 5 | SR1 5 | 30L | 13L | y |
+| A6    | address bus | 2 | 4 | 4 | SR1 6 | 31L | 14L | y |
+| A7    | address bus | 1 | 3 | 3 | SR1 7 | 32L | 15L | y |
+| A8    | address bus | 23 | 25 | 25 | SR2 15 | 31U | 14U | y |
+| A9    | address bus | 22 | 24 | 24 | SR2 1 | 30U | 13U | y |
+| A10   | address bus | 19 | 21 | 21 | SR2 2 | 27U | 10U | y |
+| A11   | address bus | - | 23 | 23 | SR2 3 | 39L | 12U | y |
+| A12   | address bus | - | 2 | 2 | SR2 4 | 38L | 16L | y |
+| A13 | address bus | - | NC (**Note 2**) | 26 | SR2 5 | 37L | 15U | y |
+| A14 | address bus | - | - | 1 | SR2 6 (**Note 1**) |  36L | 18L | y |
+| CE_ | chip enable | 18 | 20 | 20 | GND | | | k | 
+| OE_ | output enable | 20 | 22 | 22 | SR2 7 | r |
+| WE_ | write enable | 21 | 27 | 27| D13 | w |
 | I/O0 | data bus | 9 | 11 | 11 | D5 | 
 | I/O1 | data bus | 10 | 12 | 12 | D6 | 
 | I/O2 | data bus | 11 | 13 | 13 | D7 | 
@@ -52,8 +52,8 @@ D*n* are Arduino pins.
 | I/O5 | data bus | 15 | 17 | 17 | D10 | 
 | I/O6 | data bus | 16 | 18 | 18 | D11 | 
 | I/O7 | data bus | 17 | 19 | 19 | D12 | 
-| GND | power | 12 | 14 | 14 | GND | 
-| Vcc | power | 24 | 28 | 28 |  +5V | 
+| GND | power | 12 | 14 | 14 | GND | | | k |
+| Vcc | power | 24 | 28 | 28 |  +5V | | | r |
 
 **Note 1:** Our design shares a 28-pin socket for an AT28C64 or an AT28C256 to be programmed. On the AT28C64, pin 1 is an open-drain output (READY/BUSY_) that we do not use. On the AT28C256, pin 1 is an input (A14). In this situation, we need to prevent the possibility of a dead short when using the AT28C64. Although SR2 6 is normally low in its address range, it is prudent to place a 4.7K current-limiting resistor between SR2 pin 6 and the socket pin 1.
 
