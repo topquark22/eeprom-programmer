@@ -31,7 +31,7 @@ D*n* are Arduino pins.
 | A2   | address bus | 6 | 8 | 8 | SR1 2 | 27L | 10L | 17y |
 | A3    | address bus | 5 | 7 | 7| SR1 3 | 28L | 11L | 17y |
 | A4   | address bus | 4 | 6 | 6 | SR1 4 | 29L | 12L | 17y |
-| A5    | address bus | 3 | 5 | 5 | SR1 5 | 30L | 13L | 17y |
+| A5    | address bus | 3 | 5 | 5 | SR1 5 | 30L or 45L  | 13L | 17y |
 | A6    | address bus | 2 | 4 | 4 | SR1 6 | 31L | 14L | 17y |
 | A7    | address bus | 1 | 3 | 3 | SR1 7 | 32L | 15L | 17y |
 | A8    | address bus | 23 | 25 | 25 | SR2 15 | 31U | 14U | 17y |
