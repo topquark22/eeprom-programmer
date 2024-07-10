@@ -41,9 +41,9 @@ D*n* are Arduino pins.
 | A12   | address bus | - | 2 | 2 | SR2 4 | 38L | 16L | y |
 | A13 | address bus | - | NC (**Note 2**) | 26 | SR2 5 | 37L | 15U | y |
 | A14 | address bus | - | - | 1 | SR2 6 (**Note 1**) |  36L | 18L | y |
-| CE_ | chip enable | 18 | 20 | 20 | GND | | | k | 
+| CE_ | chip enable | 18 | 20 | 20 | GND | 26U,9U| GND | k | 
 | OE_ | output enable | 20 | 22 | 22 | SR2 7 | 28U | 11U |  r |
-| WE_ | write enable | 21 | 27 | 27| D13 | 29U | 16U |w |
+| WE_ | write enable | 21 | 27 | 27| D13 | 29U | 16U | w |
 | I/O0 | data bus | 9 | 11 | 11 | D5 | 
 | I/O1 | data bus | 10 | 12 | 12 | D6 | 
 | I/O2 | data bus | 11 | 13 | 13 | D7 | 
@@ -52,8 +52,8 @@ D*n* are Arduino pins.
 | I/O5 | data bus | 15 | 17 | 17 | D10 | 
 | I/O6 | data bus | 16 | 18 | 18 | D11 | 
 | I/O7 | data bus | 17 | 19 | 19 | D12 | 
-| GND | power | 12 | 14 | 14 | GND | | | k |
-| Vcc | power | 24 | 28 | 28 |  +5V | | | r |
+| GND | power | 12 | 14 | 14 | GND | 21L,4L | GND | k |
+| Vcc | power | 24 | 28 | 28 |  +5V | 32U,17U | +5V | r |
 
 **Note 1:** Our design shares a 28-pin socket for an AT28C64 or an AT28C256 to be programmed. On the AT28C64, pin 1 is an open-drain output (READY/BUSY_) that we do not use. On the AT28C256, pin 1 is an input (A14). In this situation, we need to prevent the possibility of a dead short when using the AT28C64. Although SR2 6 is normally low in its address range, it is prudent to place a 4.7K current-limiting resistor between SR2 pin 6 and the socket pin 1.
 
